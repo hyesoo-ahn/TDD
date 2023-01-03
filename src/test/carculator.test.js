@@ -21,10 +21,18 @@ describe("Calculator", () => {
     expect(cal.value).toBe(0);
   });
 
-  it("add", () => {
+  it("adds", () => {
     cal.set(1);
     cal.add(2);
     expect(cal.value).toBe(3);
+  });
+
+  // 에러를 예상하는 코드 작성..!
+  // calculator.js에서 내가 작성한 에러가 뜰 것임을 예측해야 한다.
+  it("add should throw an error if value is greater than 100", () => {
+    expect(() => {
+      cal.add(101);
+    }).toThrow("Value cannot be greater than 100");
   });
 
   it("substacts", () => {
