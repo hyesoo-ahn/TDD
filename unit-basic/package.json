@@ -1,0 +1,13 @@
+{
+  "name": "UNIT-BASIC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "jest": "^29.3.1"
+  }
+}
